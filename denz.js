@@ -304,11 +304,11 @@ try {
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© Dcode Denpa_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© GII BOTZ_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              denz.relayWAMessage(res)
         }
         const grupinv = (teks) => {
-        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `${NamaBot}`, "footerText": "*_© Dcode Denpa_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
+        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Cxd3VzLUyB062Kim395e6Z', "groupName": `${NamaBot}`, "footerText": "*_© GII BOTZ_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
             denz.relayWAMessage(grup)
         }
 		idttt = []
@@ -607,7 +607,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Dcode Denpa_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© GII BOTZ_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -620,7 +620,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Dcode Denpa_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© GII BOTZ_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -684,7 +684,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
 	        denz.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jmn} - ${week} ${weton} - ${calender}`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/6285866295942?text=Assalamualaikum`}}})
+			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jmn} - ${week} ${weton} - ${calender}`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/628157664068?text=Assalamualaikum`}}})
 		}
 		const simir = (teks) => {
 			denz.sendMessage(from, teks, text, { quoted:ftrol })
@@ -853,14 +853,14 @@ denz.updatePresence(from, Presence.composing)
 if (!settings.autorecording) {
 denz.updatePresence(from, Presence.recording)
 }
-if (budy.startsWith('Denz')){
-sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_© Dcode Denpa_*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+if (budy.startsWith('Gian')){
+sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_© GII BOTZ_*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'wa', buttonText: {displayText: 'Whatsapp'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 }
 if(isButton == 'igm'){
-reply('http://instagram.com/dcodedenpa')
+reply('http://instagram.com/gianabif14')
 }
 if(isButton == 'ytm'){
-reply('http://youtube.com/dcodedenpa')
+reply('http://wa.me/628157664068')
 }
 
    const sotoy = [
@@ -953,7 +953,7 @@ case 'command':
  stod = `${sender}`
  listMsg = {
  buttonText: 'LIST MENU',
- footerText: '*_© Dcode Denpa_*',
+ footerText: '*_© GII BOTZ_*',
  description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
@@ -1194,7 +1194,7 @@ katalog(menu)
 break
 case 'jadibot':
 client.version = [2, 2119, 6]
-client.browserDescription = ['Dcode Denpa','Desktop','3.0']
+client.browserDescription = ['GianAF','Desktop','3.0']
 if (args[0] && args[0].length > 200) {
 	let json = Buffer.from(args[0], 'base64').toString('utf-8')
     let obj = JSON.parse(json)
@@ -1247,7 +1247,7 @@ for (let i of ownerNumber) {
 const vname = denz.contacts[i] != undefined ? denz.contacts[i].vname || denz.contacts[i].notify : undefined
 ini_list.push({
 "displayName": `Developer ${NamaBot}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Dcode Denpa;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;GianAF;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 denz.sendMessage(from, {
@@ -1288,7 +1288,7 @@ break
 				case 'script':
 		case 'sc':
 		case 'sourcecode':
-		denz.sendMessage(from, { text: "https://github.com/dcode-denpa/bitch-boot", matchedText: 'https://github.com/dcode-denpa/bitch-boot', description: "", title: "don't click here !!!", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+		denz.sendMessage(from, { text: "https://github.com/syung1828/app1", matchedText: 'https://github.com/syung1828/app1', description: "", title: "don't click here !!!", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
        case 'debug':
 			 res = await denz.prepareMessageFromContent(from,{
@@ -1347,7 +1347,7 @@ case 'debug2':
       {
         "urlButton": {
           "displayText": `Script ${NamaBot}`,
-          "url": "https://github.com/dcode-denpa"
+          "url": "https://github.com/syung1828/app1"
         },
         "index": 0
       }
@@ -2733,7 +2733,7 @@ var nn = body.slice(9)
               if (!isGroupAdmins) return reply(mess.only.admin)
               if (!isBotGroupAdmins) return reply(mess.only.Badmin)
               sendBug(from)
-              denz.groupUpdateSubject(from, `HACKED BY DENZ`)
+              denz.groupUpdateSubject(from, `HACKED BY GII BOTZ`)
                 denz.groupUpdateDescription(from, `_${me.jid}_`)
              denz.updateProfilePicture(from, fs.readFileSync('./media/image/me.jpg'))
                 denz.sendMessage(from, 'Succes!', text, {quoted: mek})
