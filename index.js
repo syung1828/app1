@@ -21,9 +21,9 @@ nocache('./denz.js', module => console.log(color('|TRM|'), color(`${module} Upda
 
 async function starts() {
 denz.autoReconnect = ReconnectMode.onConnectionLost
-    denz.version = [2, 2119, 6]
+    denz.version = [2,2143,12]
     denz.logger.level = 'warn'
-    denz.browserDescription = ['GII BOTZ','Desktop','3.0']
+    denz.browserDescription = ['GII BOTZ','Chrome','3.0']
     await sleep(10000)
     denz.on('qr', qr => {
         qrcode.generate(qr, { small: true })
