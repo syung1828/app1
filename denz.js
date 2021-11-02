@@ -924,7 +924,7 @@ reply('http://wa.me/628157664068')
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `┌───「 \`\`\`${NamaBot}\`\`\` 」
 │
-├ _Creator : @${dtod.split('@')[0]}_
+├ _Creator : @${otod.split('@')[0]}_
 ├ _Battery : ${baterai.battery}_
 ├ _Mode : ${publik ? 'Public' : 'Self'}_
 ├ _Total Hit : ${cmhit.length}_
@@ -1005,7 +1005,6 @@ break
 case 'ownermenu':
 menu = `❏ 「 \`\`\`MENU OWNER\`\`\` 」
 ├────────────────────
-├ ${prefix}stopjadibot
 ├ ${prefix}autorespon [ _on/off_ ]
 ├ ${prefix}antidelete [ _on/off_ ]
 ├ ${prefix}bc [ _teks/reply gif/image/video with caption_ ]
@@ -1185,52 +1184,6 @@ menu = `❏ 「 \`\`\`MENU OTHER\`\`\` 」
 └ ${prefix}detikvideo [ _reply video caption angka_ ]`
 katalog(menu)
 break
-case 'jadibot':
-client.version = [2, 2119, 6]
-client.browserDescription = ['GianAF','Desktop','3.0']
-if (args[0] && args[0].length > 200) {
-	let json = Buffer.from(args[0], 'base64').toString('utf-8')
-    let obj = JSON.parse(json)
-    await client.loadAuthInfo(obj)
-}
-try {
-client.on('qr' ,async qr => {
-qrbot = await qrkode.toDataURL(qr, { scale: 8 })
-buffqr = await Buffer.from(qrbot.split('data:image/png;base64,')[1], 'base64')
-await fs.writeFileSync(`./jadibot@${sender}.jpg`, buffqr)
-let scen = await denz.sendMessage(from, fs.readFileSync(`./jadibot@${sender}.jpg`), MessageType.image, {quoted : mek,caption: 'Scan QR ini untuk jadi bot sementara!\n1. Klik titik tiga di pojok kanan atas\n2. Ketuk WhatsApp Web\n3. Scan QR ini \n\nQR Expired dalam 20 detik'})    
-setTimeout(() => {
-       denz.deleteMessage(from, scen.key)
-  }, 30000);
-})  
-client.on ('open', async () => {
-  console.log ('credentials update')
-  const authInfo = client.base64EncodedAuthInfo()
-  fs.writeFileSync(`./sampah/${sender}.json`, JSON.stringify(authInfo  ,null, '\t'))
-  await client.sendMessage('0@s.whatsapp.net', `Kamu bisa login tanpa qr dengan pesan dibawah ini`, MessageType.extendedText)
-  client.sendMessage('0@s.whatsapp.net', `${prefix}${command} ${Buffer.from(JSON.stringify(authInfo)).toString('base64')}`, MessageType.extendedText)
-})
-client.on('chat-update', async (chat) => {
-	require('./denz.js')(client, chat)
-})    
-await client.connect().then(async ({user}) => {
-reply('Berhasil tersambung dengan WhatsApp - mu.\n*NOTE: Ini cuma numpang*\n' + JSON.stringify(user, null, 2))
-})
-} catch {
-reply('Error! hanya 1 orang yang dapat mengakses fitur jadibot')
-}
-break
-case 'stopjadibot':
-if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-try {
-reply('Oke')
-fs.unlinkSync(`./sampah/${sender}.json`)
-client.close()
-} catch {
-reply('Oke')
-client.close()
-}
-break
 case 'owner':
 	case 'creator':
 case 'developer':
@@ -1257,7 +1210,7 @@ var kodenya = mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerM
 addCmd(kodenya, c)
 reply("Done Bwang")
 } else {
-reply('tag stickenya')
+reply('tag stickernya')
 }
 break
 case 'delcmd':
@@ -1281,7 +1234,7 @@ break
 				case 'script':
 		case 'sc':
 		case 'sourcecode':
-		denz.sendMessage(from, { text: "https://github.com/syung1828/app1", matchedText: 'https://github.com/syung1828/app1', description: "", title: "don't click here !!!", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+		denz.sendMessage(from, { text: "Chat Developerku!", matchedText: 'https://wa.me/628157664068', description: "", title: "click here !!!", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
        case 'debug':
 			 res = await denz.prepareMessageFromContent(from,{
