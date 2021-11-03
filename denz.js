@@ -1145,7 +1145,6 @@ break
 case 'othermenu':
 menu = `❏ 「 \`\`\`MENU OTHER\`\`\` 」
 ├────────────────────
-├ ${prefix}jadibot
 ├ ${prefix}caripesan [ _teks|jumlah_ ]
 ├ ${prefix}slots
 ├ ${prefix}suit [ _gunting/batu/kertas_ ]
